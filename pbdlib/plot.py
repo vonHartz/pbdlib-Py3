@@ -779,7 +779,6 @@ def tri_elipsoid(n_rings, n_points):
 def plot_gauss3d(ax, mean, covar, n_points=30, n_rings=20, color='red', alpha=0.3,
 				 linewidth=0):
 	''' Plot 3d Gaussian'''
-
 	# Compute eigen components:
 	(D0, V0) = np.linalg.eig(covar)
 	U0 = np.real(V0.dot(np.diag(D0) ** 0.5))
